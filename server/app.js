@@ -14,7 +14,7 @@ const app = express();
 connectDB();
 
 app.use(cors({
-  origin: 'http://localhost:3000'
+  origin: 'https://myurlshortner.vercel.app'
 }));
 // Body Parser
 app.use(express.urlencoded({ extended: true }));
