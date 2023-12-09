@@ -51,6 +51,7 @@ function App() {
       <div className='shortener'>
         <h2>URL shortener</h2>
         {/* Form to submit url */}
+        <p>(Provide urls with http)*</p>
         <form>
           <input
             placeholder='Enter URL'
