@@ -17,7 +17,7 @@ function App() {
       const { data } = await axios.post('https://shorturl-sigma.vercel.app/api/short', {
         "origUrl": url
       }, {
-        mode: 'no-cors',
+        // mode: 'no-cors',
         headers: {
           'Access-Control-Allow-Origin': '*',
           'Content-Type': 'application/json'
