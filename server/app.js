@@ -17,6 +17,7 @@ app.use(cors({
   origin: 'https://myurlshortner.vercel.app'
 }));
 // Body Parser
+console.log("app run")
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
