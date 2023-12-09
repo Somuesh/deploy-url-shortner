@@ -28,7 +28,8 @@ function App() {
       setShortenedUrl(data);
       setLoading(prev => !prev)
     } catch (e) {
-      alert(e);
+      alert(e.message);
+      setLoading(prev => !prev)
     }
   };
 
