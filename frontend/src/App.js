@@ -14,7 +14,7 @@ function App() {
     if (url === '') return alert("Please provide a valid url!");
     try {
       setLoading(prev => !prev);
-      const { data } = await axios.post('http://localhost:8000/api/short', {
+      const { data } = await axios.post('https://shorturl-sigma.vercel.app//api/short', {
         "origUrl": url
       }, {
         mode: 'no-cors',
