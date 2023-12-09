@@ -21,6 +21,9 @@ console.log("app run")
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+app.get('/',(req,res)=>{
+  res.send("API is working...")
+})
 //middlewares
 app.use('/', indexRouter);
 app.use('/api', urlsRouter);
